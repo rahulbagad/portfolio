@@ -1,2 +1,3 @@
 # 👋 Hi there! This is my upcoming portfolio website... 
 
+Temporarily hosted on netify - https://trusting-beaver-cc2c50.netlify.app/
