@@ -1,13 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+const Header = ({ siteTitle }) => {
+  
+  return (<header
+    // style={{
+    //   background: `rebeccapurple`,
+    //   marginBottom: `1.45rem`,
+    // }}
   >
     <div
       style={{
@@ -27,9 +29,20 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            Dark mode
+          </label>
+        )}
+      </ThemeToggler>
     </div>
-  </header>
-)
+  </header>)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
