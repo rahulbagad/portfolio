@@ -10,8 +10,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>👋 Hi people</h1>
     <p>Welcome to my new webspace 🕸. Hope you'll like it...😇</p>
-    <p>Content coming soon.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <p>Let me introduce myself...😄</p>
+    <p>Now you already know my name. Let's talk about other things. I'm a Computer science enthusiast and B.Tech Information Technology graduate having 2.5+ years of experience as Software Engineer 👨‍💻 currently working with <a href="https://sahaj.ai" target="_blank">Sahaj</a> as a Polyglot Developer across wide range of technologies following agile and XP practices.</p>
+    <p>I'm passionate about programming and delivering, clean, test-covered, well-designed and scalable code. I am interested in Algorithms, Data Structures & Backend systems. And I also like to <a href="https://instagram.com/rahul_bagad" target="_blank" >capture </a>📷 the things around.</p>
+    <div style={{ maxWidth: `250px`, marginBottom: `1.45rem`}}>
       <Image />
     </div>
     <Link to="/about/">About Me</Link> <br />
