@@ -11,8 +11,6 @@ html {
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   --bg: white;
   --textNormal: #222;
   --textTitle: #222;
@@ -20,11 +18,10 @@ body {
   --hr: hsla(0, 0%, 0%, 0.2);
 
   background-color: var(--bg);
+  color: #000;
 }
 
 body.dark {
-  -webkit-font-smoothing: antialiased;
-
   --bg: darkslategray;
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
