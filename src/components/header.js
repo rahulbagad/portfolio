@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { useColorMode, Flex } from "theme-ui";
+import Moon from "../images/moon.png";
+import Sun from "../images/sun.png";
 
 const Header = ({ siteTitle }) => {
   const [colorMode, setColorMode] = useColorMode();
@@ -21,7 +23,6 @@ const Header = ({ siteTitle }) => {
           padding: `1.45rem 1.0875rem`,
         }}
       >
-
         <h1 style={{ margin: 0 }}>
           <Link
             to="/"
@@ -32,13 +33,13 @@ const Header = ({ siteTitle }) => {
           >
             {siteTitle}
           </Link>
-          <button style={{float: 'right'}}
-          onClick={(e) => {
-            setColorMode(nextColorMode);
-          }}
-        >
-          M
-        </button>
+          <img
+            src={colorMode === "dark" ? Moon : Sun}
+            style={{ width: 30, height: 30, float: "right" }}
+            onClick={(e) => {
+              setColorMode(nextColorMode);
+            }}
+          />
         </h1>
       </div>
     </header>
