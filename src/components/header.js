@@ -34,12 +34,6 @@ const Header = ({ siteTitle }) => {
           Resume
         </NavLink>
         <NavLink href="#!" p={2}>
-          Skills
-        </NavLink>
-        <NavLink href="#!" p={2}>
-          Experience
-        </NavLink>
-        <NavLink href="#!" p={2}>
           Projects
         </NavLink>
         <NavLink href="#!" p={2}>
