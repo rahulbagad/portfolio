@@ -18,10 +18,10 @@ const Header = ({ siteTitle }) => {
       }}
     >
       <div style={{display:"flex", justifyContent:"space-between", alignItems: "center", padding: 5}}>
-        <span><h1>Rahul Bagad</h1></span>
+        <span style={{fontSize: 30, fontWeight: 650}}>Rahul Bagad</span>
         <span><img
             src={colorMode === "dark" ? Moon : Sun}
-            style={{ width: 30, height: 30, float: "right" }}
+            style={{ width: 25, float: "right", marginTop: 28 }}
             onClick={(e) => {
               setColorMode(nextColorMode);
             }}
