@@ -35,11 +35,11 @@ const row = (experience) => {
             </div>
           ))}
           {experience.work && <div style={{ fontSize: 16, fontWeight: "lighter" }}>
-            - My work majorly involved
+            -   My work majorly involved
           </div>}
           {experience.work &&
             experience.work.map((desc) => (
-                <div style={{ fontSize: 16, fontWeight: "lighter", paddingLeft: 10 }}>{"- " + desc}</div>
+              <li style={{ fontSize: 15, fontWeight: "lighter", paddingLeft: 8 }}>{desc}</li>
             ))}
         </blockquote>
       </div>
