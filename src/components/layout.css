@@ -21,6 +21,7 @@ html {
 a {
   color: #9f7aea;
   font-weight: 1500;
+  text-decoration: none;
 }
 
 img {
