@@ -1,12 +1,11 @@
-import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import { useColorMode, NavLink, Flex, Styled, Divider } from "theme-ui";
+import { useColorMode, NavLink, Divider } from "theme-ui";
 import Moon from "../images/moon.png";
 import Sun from "../images/sun.png";
 import Profiles from "./profiles";
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [colorMode, setColorMode] = useColorMode();
 
   const nextColorMode = colorMode === "light" ? "dark" : "light";
@@ -18,20 +17,32 @@ const Header = ({ siteTitle }) => {
         padding: `0 1.0875rem 1.45rem`,
       }}
     >
-      <div style={{display:"flex", justifyContent:"space-between", alignItems: "center", paddingLeft:10}}>
-        <span style={{fontSize: 30, fontWeight: 650}}>Rahul Bagad</span>
-        <span><img
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          paddingLeft: 10,
+        }}
+      >
+        <span style={{ fontSize: 30, fontWeight: 650 }}>Rahul Bagad</span>
+        <span>
+          <img
             src={colorMode === "dark" ? Moon : Sun}
             style={{ width: 25, float: "right", marginTop: 28 }}
             onClick={(e) => {
               setColorMode(nextColorMode);
             }}
           />
-          </span>
+        </span>
       </div>
-      <Profiles/>
-      <div style={{display:"flex", alignItems: "center", padding: 5}}>
-        <NavLink href="#!" p={2}>
+      <Profiles />
+      <div style={{ display: "flex", alignItems: "center", padding: 5 }}>
+        <NavLink
+          target="_blank"
+          href="https://drive.google.com/file/d/1Qoy8UctPE_MmwPyzdSiz6H4cUbAneiFo/view?usp=sharing"
+          p={2}
+        >
           Resume
         </NavLink>
         <NavLink href="#!" p={2}>

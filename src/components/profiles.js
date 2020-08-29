@@ -7,17 +7,8 @@ import { FaStackOverflow, FaLinkedin } from "react-icons/fa";
 const Profiles = () => {
   const PROFILE_DATA = graphql`
     {
-      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
-        childImageSharp {
-          fixed(width: 128, height: 128) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
-          author
-          bio
           social {
             github
             linkedin
@@ -31,22 +22,9 @@ const Profiles = () => {
     }
   `;
   const data = useStaticQuery(PROFILE_DATA);
-  const { author, bio, social } = data.site.siteMetadata;
+  const { social } = data.site.siteMetadata;
   return (
-    <span
-        style={{display: "inline"}}
-    >
-      <Button
-        title="LinkedIn"
-        aria-label="Link to my LinkedIn profile"
-        as="a"
-        circular
-        href={social.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaLinkedin />
-      </Button>
+    <span style={{ display: "inline" }}>
       <Button
         title="GitHub"
         aria-label="Link to my GitHub"
@@ -68,6 +46,17 @@ const Profiles = () => {
         rel="noopener noreferrer"
       >
         <FaStackOverflow />
+      </Button>
+      <Button
+        title="LinkedIn"
+        aria-label="Link to my LinkedIn profile"
+        as="a"
+        circular
+        href={social.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin />
       </Button>
       <Button
         title="Instagram"
@@ -95,4 +84,4 @@ const Profiles = () => {
   );
 };
 
-export default Profiles
+export default Profiles;

@@ -1,16 +1,15 @@
 import React from "react";
-import Profiles from "./profiles";
 
-const About = ({ siteTitle }) => {
+const About = () => {
   return (
     <div style={{ paddingTop: 50, paddingBottom: 50 }}>
-      <h3>👋 Hola!</h3>
-      <p>Welcome to my new webspace 🕸 . Hope you'll like it... 😇 </p>
+      <h3><span role="img">👋</span> Hola!</h3>
+      <p>Welcome to my new webspace <span role="img">🕸</span> . Hope you'll like it... <span role="img">😇</span> </p>
       <p>Let me introduce myself...</p>
       <p>
         Wait, you already know my name. Let's talk about other things. I'm a
         Computer science enthusiast and B.Tech Information Technology graduate
-        having 2.5+ years of experience as Software Engineer 👨‍💻 currently
+        having 2.5+ years of experience as Software Engineer <span role="img">👨‍💻</span> currently
         working with{" "}
         <a href="https://sahaj.ai" target="_blank">
           Sahaj
@@ -25,7 +24,7 @@ const About = ({ siteTitle }) => {
         <a href="https://instagram.com/rahul_bagad" target="_blank">
           capture{" "}
         </a>
-        📷 the things around.
+        <span role="img">📷</span> the things around.
       </p>
     </div>
   );
