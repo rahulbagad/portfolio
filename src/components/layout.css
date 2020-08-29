@@ -18,6 +18,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+a {
+  color: #9f7aea;
+  font-weight: 1500;
+}
 
 img {
   max-width: 100%;

@@ -9,11 +9,15 @@ export default {
       text: '#000',
       background: '#fff',
       primary: '#33e',
+      borderColor: '#eee',
+      borderHoverColor: 'transparent',
       modes: {
         dark: {
           text: '#fff',
           background: '#000',
-          primary: '#cc1'
+          primary: '#cc1',
+          borderColor: 'hsla(0, 0%, 100%, 0.60)',
+          borderHoverColor: 'salmon'
         }
       }
     },

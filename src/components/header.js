@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useColorMode, NavLink, Divider } from "theme-ui";
-import Moon from "../images/moon.png";
-import Sun from "../images/sun.png";
 import Profiles from "./profiles";
 import { FiMoon, FiSun } from "react-icons/fi";
 import Button from "./button";
