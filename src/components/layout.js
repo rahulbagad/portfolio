@@ -7,6 +7,7 @@ import Skills from "../components/skills";
 import Projects from "../components/projects";
 import "./layout.css";
 import Experience from "./experience";
+import { useColorMode } from "theme-ui";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          skills
           experiences { 
             company
             role
@@ -31,10 +33,17 @@ const Layout = ({ children }) => {
             email
             twitter
           }
+          projects {
+            title
+            description
+            technologies
+            link
+          }
         }
       }
     }
   `);
+  const [colorMode, _] = useColorMode();
 
   return (
     <>
@@ -49,8 +58,8 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <About />
         <Experience experiences={data.site.siteMetadata.experiences}/>
-        <Skills />
-        <Projects />
+        <Skills skills={data.site.siteMetadata.skills}/>
+        <Projects projects={data.site.siteMetadata.projects} colorMode={colorMode}/>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `} <span role="img">🧡 by Rahul Bagad</span>

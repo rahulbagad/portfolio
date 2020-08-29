@@ -35,7 +35,7 @@ const row = (experience) => {
             </div>
           ))}
           {experience.work && <div style={{ fontSize: 16, fontWeight: "lighter" }}>
-            -   My work majorly involved
+            -   Majorly my work involved:
           </div>}
           {experience.work &&
             experience.work.map((desc) => (

@@ -21,7 +21,7 @@ module.exports = {
         from: `April 2019`,
         to: `Present`,
         description: [
-          `Involved in client interactions, designing and developing end to end features.`,
+          `Involves in client interactions, designing and developing end to end features.`,
           `Working on building real-time, automated OOH trading platform.`,
         ],
         work: [
@@ -56,6 +56,33 @@ module.exports = {
         ],
       },
     ],
+    skills: ["Java", "Python", "JavaScript", "PHP", "SpringBoot", "React", "Flask", "MongoDb", "MySQL", "Git", "AWS", "Docker", "Kubernetes" ],
+    projects: [
+      {
+        title: "PuzzlePedia",
+        description:"Webapp for Puzzle Lovers to try out new puzzles. At present it has 140+ users and 800+ submissions. Here one can solve, share and practice the puzzles, compete with others and conquer the leaderboard.",
+        technologies: ["PHP", "JavaScript", "MySQL", "bootstrap"],
+        link: "https://github.com/rahulbagad"
+      },
+      {
+        title: "Smart Gas Leak Detector",
+        description:"IoT based cost effective system which detects LPG/CNG leakage and notifies remote user about leakage. Also alarm is produced. Also the location is shown on google maps.",
+        technologies: ["Arduino Programming",  "Google Maps API", "Arduino Uno", "GSM SIM 900A"],
+        link: "https://github.com/rahulbagad"
+      },
+      {
+        title: "ClassifyMe",
+        description:"News Article Classifier using Naive Bayes Algorithm which classifies given news article to its category. For training purpose used data from BBC news. Got 95% accuracy on testing data.",
+        technologies: ["Scikit-Learn", "Ipynb", "Python", "flask"],
+        link: "https://github.com/rahulbagad"
+      },
+      {
+        title: "Edu-OLX",
+        description:"Educational OLX - An online platform for students of WCE, Sangli wherein they can sell and buy old educational material in one place at affordable prices.",
+        technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+        link: "https://github.com/rahulbagad"
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -77,7 +104,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/prof-dark-bg.jpeg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-theme-ui`,

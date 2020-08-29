@@ -1,61 +1,19 @@
 import React from "react";
-import {
-  FaJava,
-  FaReact,
-  FaPython,
-  FaGitAlt,
-} from "react-icons/fa";
-import Button from "./button";
-import { Divider } from "theme-ui";
+import { Divider, Badge } from "theme-ui";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return (
-    <div>
+    <section style={{ paddingTop: 50, paddingBottom: 50 }}>
       <h3>Skills</h3>
       <Divider />
-      <div style={{ paddingTop: 20, paddingBottom: 20 }}>
-        <Button
-          title="Java"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaJava />
-          <span> Java</span>
-        </Button>
-        <Button
-          title="Python"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaPython />
-          <span> Python</span>
-        </Button>
-        <Button
-          title="ReactJS"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaReact />
-          <span> ReactJs</span>
-        </Button>
-        <Button
-          title="Git"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGitAlt />
-          <span> Git</span>
-        </Button>
+      <div>
+        {skills.map((skill) => 
+          <Badge sx={{ border: 5, margin: 1, backgroundColor: "#f5aa31", fontSize: 14, fontWeight: "bold" }}>
+            {skill}
+          </Badge>
+        )}
       </div>
-    </div>
+    </section>
   );
 };
 
