@@ -14,7 +14,7 @@ export default {
       modes: {
         dark: {
           text: '#fff',
-          background: '#202020',
+          background: '#1b1b1c',
           primary: '#cc1',
           borderColor: 'hsla(0, 0%, 100%, 0.60)',
           borderHoverColor: 'salmon'
