@@ -1,28 +1,9 @@
 import React from "react";
-import { useStaticQuery } from "gatsby";
 import Button from "./button";
 import { FiGithub, FiInstagram, FiMail } from "react-icons/fi";
 import { FaStackOverflow, FaLinkedin } from "react-icons/fa";
 
-const Profiles = () => {
-  const PROFILE_DATA = graphql`
-    {
-      site {
-        siteMetadata {
-          social {
-            github
-            linkedin
-            instagram
-            stackoverflow
-            email
-            twitter
-          }
-        }
-      }
-    }
-  `;
-  const data = useStaticQuery(PROFILE_DATA);
-  const { social } = data.site.siteMetadata;
+const Profiles = ({ socialProfiles }) => {
   return (
     <span style={{ display: "inline" }}>
       <Button
@@ -30,7 +11,7 @@ const Profiles = () => {
         aria-label="Link to my GitHub"
         as="a"
         circular
-        href={social.github}
+        href={socialProfiles.github}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -41,7 +22,7 @@ const Profiles = () => {
         aria-label="Link to my Stackoverflow"
         as="a"
         circular
-        href={social.stackoverflow}
+        href={socialProfiles.stackoverflow}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -52,7 +33,7 @@ const Profiles = () => {
         aria-label="Link to my LinkedIn profile"
         as="a"
         circular
-        href={social.linkedin}
+        href={socialProfiles.linkedin}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -63,7 +44,7 @@ const Profiles = () => {
         aria-label="Link to my Instagram"
         as="a"
         circular
-        href={social.instagram}
+        href={socialProfiles.instagram}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -74,7 +55,7 @@ const Profiles = () => {
         aria-label="Email me"
         as="a"
         circular
-        href={social.email}
+        href={socialProfiles.email}
         target="_blank"
         rel="noopener noreferrer"
       >

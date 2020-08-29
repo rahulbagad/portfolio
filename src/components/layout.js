@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
+import About from "../components/about";
+import Skills from "../components/skills";
+import Projects from "../components/projects";
 import "./layout.css";
 
 const Layout = ({ children }) => {
@@ -10,6 +13,14 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          social {
+            github
+            linkedin
+            instagram
+            stackoverflow
+            email
+            twitter
+          }
         }
       }
     }
@@ -17,7 +28,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
@@ -25,7 +35,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Header siteMetadata={data.site.siteMetadata} />
         <main>{children}</main>
+        <About />
+        <Skills />
+        <Projects />
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `} <span>🧡 by Rahul Bagad</span>

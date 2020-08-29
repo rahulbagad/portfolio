@@ -5,18 +5,12 @@ import Profiles from "./profiles";
 import { FiMoon, FiSun } from "react-icons/fi";
 import Button from "./button";
 
-const Header = () => {
+const Header = ({siteMetadata}) => {
   const [colorMode, setColorMode] = useColorMode();
-
+  console.log(siteMetadata)
   const nextColorMode = colorMode === "light" ? "dark" : "light";
   return (
-    <header
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0 1.0875rem 1.45rem`,
-      }}
-    >
+    <header>
       <div
         style={{
           display: "flex",
@@ -25,7 +19,7 @@ const Header = () => {
           paddingLeft: 10,
         }}
       >
-        <span style={{ fontSize: 30, fontWeight: 650 }}>Rahul Bagad</span>
+        <span style={{ fontSize: 30, fontWeight: 650 }}>{siteMetadata?.title}</span>
         <span>
           <Button
             title="toogle-switch"
@@ -42,7 +36,7 @@ const Header = () => {
           </Button>
         </span>
       </div>
-      <Profiles />
+      <Profiles socialProfiles={siteMetadata?.social}/>
       <div style={{ display: "flex", alignItems: "center", padding: 5 }}>
         <NavLink
           target="_blank"
