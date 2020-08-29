@@ -4,8 +4,6 @@ import {
   FaReact,
   FaPython,
   FaGitAlt,
-  FaDatabase,
-  FaFlask,
 } from "react-icons/fa";
 import Button from "./button";
 import { Divider } from "theme-ui";
@@ -45,26 +43,6 @@ const Skills = () => {
         >
           <FaReact />
           <span> ReactJs</span>
-        </Button>
-        <Button
-          title="MongoDB"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaDatabase />
-          <span> MongoDB</span>
-        </Button>
-        <Button
-          title="Flask"
-          as="a"
-          circular
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFlask />
-          <span> Flask</span>
         </Button>
         <Button
           title="Git"

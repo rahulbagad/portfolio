@@ -6,6 +6,7 @@ import About from "../components/about";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
 import "./layout.css";
+import Experience from "./experience";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -13,6 +14,15 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          experiences { 
+            company
+            role
+            website
+            from
+            to
+            description
+            work
+           }
           social {
             github
             linkedin
@@ -38,6 +48,7 @@ const Layout = ({ children }) => {
         <Header siteMetadata={data.site.siteMetadata} />
         <main>{children}</main>
         <About />
+        <Experience experiences={data.site.siteMetadata.experiences}/>
         <Skills />
         <Projects />
         <footer>

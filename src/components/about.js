@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div style={{ paddingTop: 50, paddingBottom: 50 }}>
+    <div style={{ paddingTop: 20, paddingBottom: 20 }}>
       <h3><span role="img">👋</span> Hola!</h3>
       <p>Welcome to my new webspace <span role="img">🕸</span> . Hope you'll like it... <span role="img">😇</span> </p>
       <p>Let me introduce myself...</p>
