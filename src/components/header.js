@@ -4,6 +4,8 @@ import { useColorMode, NavLink, Divider } from "theme-ui";
 import Moon from "../images/moon.png";
 import Sun from "../images/sun.png";
 import Profiles from "./profiles";
+import { FiMoon, FiSun } from "react-icons/fi";
+import Button from "./button";
 
 const Header = () => {
   const [colorMode, setColorMode] = useColorMode();
@@ -27,13 +29,19 @@ const Header = () => {
       >
         <span style={{ fontSize: 30, fontWeight: 650 }}>Rahul Bagad</span>
         <span>
-          <img
-            src={colorMode === "dark" ? Moon : Sun}
-            style={{ width: 25, float: "right", marginTop: 28 }}
+          <Button
+            title="toogle-switch"
+            as="a"
+            style={{ float: "right", marginTop: 28 }}
+            circular
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={(e) => {
               setColorMode(nextColorMode);
             }}
-          />
+          >
+            {colorMode === "dark" ? <FiMoon /> : <FiSun />}
+          </Button>
         </span>
       </div>
       <Profiles />
