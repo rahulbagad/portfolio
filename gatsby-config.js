@@ -1,9 +1,19 @@
 module.exports = {
-  siteMetadata: {
-    title: `Rahul Bagad`,
-    description: `Personal portfolio website`,
-    author: `@rahulbagad`,
-  },
+	siteMetadata: {
+		bio: 'Software Developer',
+		title: `Rahul Bagad`,
+		author: `Rahul Bagad`,
+		description: `Personal portfolio of Divyanshu Maithani`,
+		siteUrl: `https://rahulbagad.github.io`,
+		social: {
+			twitter: `https://twitter.com/BagadRahul`,
+			github: 'https://github.com/rahulbagad',
+			instagram: 'https://www.instagram.com/rahul_bagad',
+			email: 'mailto:rahulbagad@hotmail.com',
+			stackoverflow: 'https://stackoverflow.com/users/6131082/rahul-bagad',
+			linkedin: 'https://www.linkedin.com/in/rahulbagad',
+		},
+	},
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

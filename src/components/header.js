@@ -4,6 +4,7 @@ import React from "react";
 import { useColorMode, NavLink, Flex, Styled, Divider } from "theme-ui";
 import Moon from "../images/moon.png";
 import Sun from "../images/sun.png";
+import Profiles from "./profiles";
 
 const Header = ({ siteTitle }) => {
   const [colorMode, setColorMode] = useColorMode();
@@ -17,7 +18,7 @@ const Header = ({ siteTitle }) => {
         padding: `0 1.0875rem 1.45rem`,
       }}
     >
-      <div style={{display:"flex", justifyContent:"space-between", alignItems: "center", padding: 5}}>
+      <div style={{display:"flex", justifyContent:"space-between", alignItems: "center", paddingLeft:10}}>
         <span style={{fontSize: 30, fontWeight: 650}}>Rahul Bagad</span>
         <span><img
             src={colorMode === "dark" ? Moon : Sun}
@@ -28,8 +29,8 @@ const Header = ({ siteTitle }) => {
           />
           </span>
       </div>
-
-      <Flex as="nav">
+      <Profiles/>
+      <div style={{display:"flex", alignItems: "center", padding: 5}}>
         <NavLink href="#!" p={2}>
           Resume
         </NavLink>
@@ -39,7 +40,7 @@ const Header = ({ siteTitle }) => {
         <NavLink href="#!" p={2}>
           Blog
         </NavLink>
-      </Flex>
+      </div>
       <Divider />
     </header>
   );

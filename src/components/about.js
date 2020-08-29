@@ -1,8 +1,9 @@
-import React from "react"
+import React from "react";
+import Profiles from "./profiles";
 
 const About = ({ siteTitle }) => {
   return (
-    <div style={{paddingTop: 50, paddingBottom: 50}}>
+    <div style={{ paddingTop: 50, paddingBottom: 50 }}>
       <h3>👋 Hola!</h3>
       <p>Welcome to my new webspace 🕸 . Hope you'll like it... 😇 </p>
       <p>Let me introduce myself...</p>
@@ -29,4 +30,4 @@ const About = ({ siteTitle }) => {
     </div>
   );
 };
-export default About
+export default About;
