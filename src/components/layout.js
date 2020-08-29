@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
         <Projects projects={data.site.siteMetadata.projects} colorMode={colorMode}/>
         <footer>
           © {new Date().getFullYear()}, Built with
-          {` `} <span role="img">🧡 by Rahul Bagad</span>
+          {` `} <span role="img">🧡 by Rahul Bagad. Work in progress...<span role="img">🚧</span></span>
         </footer>
       </div>
     </>

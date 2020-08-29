@@ -14,35 +14,38 @@ const Experience = ({ experiences }) => {
 const row = (experience) => {
   return (
     <div style={{ padding: 10 }}>
-        <div
-          style={{ fontSize: 18, fontWeight: "bold" }}
-        >
-          {experience.role}{" "}
-          <span style={{ fontWeight: "lighter" }}>{"  |  "}</span>{" "}
-          <span style={{ fontSize: 16 }}>
-            <a href={experience.website} target="_blank" rel="noreferrer">
-              {experience.company}
-            </a>
-          </span>
-        </div>
-        <div style={{ fontSize: 16, fontWeight: "lighter" }}>
-          {experience.from} - {experience.to}
-        </div>
-        <blockquote>
-          {experience.description.map((desc) => (
-            <div style={{ fontSize: 16, fontWeight: "lighter" }}>
-              {"- " + desc}
-            </div>
-          ))}
-          {experience.work && <div style={{ fontSize: 16, fontWeight: "lighter" }}>
-            -   Majorly my work involved:
-          </div>}
-          {experience.work &&
-            experience.work.map((desc) => (
-              <li style={{ fontSize: 15, fontWeight: "lighter", paddingLeft: 8 }}>{desc}</li>
-            ))}
-        </blockquote>
+      <div style={{ fontSize: 18, fontWeight: "bold" }}>
+        {experience.role}{" "}
+        <span style={{ fontWeight: "lighter" }}>{"  |  "}</span>{" "}
+        <span style={{ fontSize: 16 }}>
+          <a href={experience.website} target="_blank" rel="noreferrer">
+            {experience.company}
+          </a>
+        </span>
       </div>
+      <div style={{ fontSize: 16, fontWeight: "lighter" }}>
+        {experience.from} - {experience.to}
+      </div>
+      <blockquote>
+        {experience.description.map((desc) => (
+          <div style={{ fontSize: 16, fontWeight: "lighter" }}>
+            {"- " + desc}
+          </div>
+        ))}
+        {experience.work && (
+          <div style={{ fontSize: 16, fontWeight: "lighter" }}>
+            - Majorly my work{" "}
+            {experience.to === "Present" ? "involves:" : "involved:"}
+          </div>
+        )}
+        {experience.work &&
+          experience.work.map((desc) => (
+            <li style={{ fontSize: 15, fontWeight: "lighter", paddingLeft: 8 }}>
+              {desc}
+            </li>
+          ))}
+      </blockquote>
+    </div>
   );
 };
 
