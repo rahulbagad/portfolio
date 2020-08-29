@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
         <Projects />
         <footer>
           © {new Date().getFullYear()}, Built with
-          {` `} <span>🧡 by Rahul Bagad</span>
+          {` `} <span role="img">🧡 by Rahul Bagad</span>
         </footer>
       </div>
     </>

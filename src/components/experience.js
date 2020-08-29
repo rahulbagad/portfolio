@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Card } from "theme-ui";
+import { Divider } from "theme-ui";
 
 const Experience = ({ experiences }) => {
   return (
@@ -13,32 +13,37 @@ const Experience = ({ experiences }) => {
 
 const row = (experience) => {
   return (
-    <Card style={{padding: 10}}>
-      <span style={{fontWeight: "bold", fontSize: 17}}>{experience.role}</span> {" | "}
-      <span style={{fontWeight: "bold", fontSize: 15}}>
-        <a href={experience.website} target="_blank">
-          {experience.company}
-        </a>
-      </span>
-      <span style={{ float: "right", fontSize: 16 }}>
-        {experience.from} - {experience.to}
-      </span>
-      {experience.description.map((desc) => (
-        <ul>
-          <li style={{fontSize: 16}}>{desc}</li>
-        </ul>
-      ))}
-      {experience.work && (
-        <ul>
-          <li  style={{fontSize: 16}}>My work majorly involved</li>
-          {experience.work.map((desc) => (
-            <ul>
-              <li style={{fontSize: 16}}>{desc}</li>
-            </ul>
+    <div style={{ padding: 10 }}>
+        <div
+          style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "bold" }}
+        >
+          {experience.role}{" "}
+          <span style={{ fontWeight: "lighter" }}>{"  |  "}</span>{" "}
+          <span style={{ fontSize: 16 }}>
+            <a href={experience.website} target="_blank" rel="noreferrer">
+              {experience.company}
+            </a>
+          </span>
+        </div>
+        <div style={{ fontFamily: "Open Sans Condensed", fontSize: 16 }}>
+          {experience.from} - {experience.to}
+        </div>
+        <blockquote>
+          {experience.description.map((desc) => (
+            <div style={{ fontFamily: "Open Sans Condensed", fontWeight: 20 }}>
+              {desc}
+            </div>
           ))}
-        </ul>
-      )}
-    </Card>
+          {experience.work && <div style={{ fontFamily: "Open Sans Condensed", fontWeight: 20 }}>
+            My work majorly involved
+          </div>}
+          {experience.work &&
+            experience.work.map((desc) => (
+              <li style={{ fontSize: 16, paddingLeft: 8 }}>{desc}</li>
+            ))}
+        </blockquote>
+      </div>
   );
 };
+
 export default Experience;
