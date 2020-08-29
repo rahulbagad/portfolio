@@ -15,7 +15,7 @@ const row = (experience) => {
   return (
     <div style={{ padding: 10 }}>
         <div
-          style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "bold" }}
+          style={{ fontSize: 18, fontWeight: "bold" }}
         >
           {experience.role}{" "}
           <span style={{ fontWeight: "lighter" }}>{"  |  "}</span>{" "}
@@ -25,21 +25,21 @@ const row = (experience) => {
             </a>
           </span>
         </div>
-        <div style={{ fontFamily: "Open Sans Condensed", fontSize: 16 }}>
+        <div style={{ fontSize: 16, fontWeight: "lighter" }}>
           {experience.from} - {experience.to}
         </div>
         <blockquote>
           {experience.description.map((desc) => (
-            <div style={{ fontFamily: "Open Sans Condensed", fontWeight: 20 }}>
-              {desc}
+            <div style={{ fontSize: 16, fontWeight: "lighter" }}>
+              {"- " + desc}
             </div>
           ))}
-          {experience.work && <div style={{ fontFamily: "Open Sans Condensed", fontWeight: 20 }}>
-            My work majorly involved
+          {experience.work && <div style={{ fontSize: 16, fontWeight: "lighter" }}>
+            - My work majorly involved
           </div>}
           {experience.work &&
             experience.work.map((desc) => (
-              <li style={{ fontSize: 16, paddingLeft: 8 }}>{desc}</li>
+                <div style={{ fontSize: 16, fontWeight: "lighter", paddingLeft: 10 }}>{"- " + desc}</div>
             ))}
         </blockquote>
       </div>
