@@ -21,12 +21,13 @@ module.exports = {
         from: `April 2019`,
         to: `Present`,
         description: [
-          `Involves in client interactions, designing and developing end to end features.`,
+          `Involved in client interactions, designing and developing end to end features.`,
           `Working on building real-time, automated OOH trading platform.`,
         ],
         work: [
           `Programming and delivering clean, test-covered and well-designed code.`,
           `Implementing UI Designs and backend integration.`,
+          `Identifying bottlenecks and optimizing serving time, page load time, database queries.`
         ],
       },
       {
