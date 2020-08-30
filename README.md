@@ -1,4 +1,5 @@
-# Portfolio - Temporarily hosted on netlify - https://trusting-beaver-cc2c50.netlify.app/
+# Portfolio 
+[Temporarily hosted on netlify - https://trusting-beaver-cc2c50.netlify.app/]
 👋 Hi There, this is my upcoming personal website. This is work in progress 🚧. 
 
 
