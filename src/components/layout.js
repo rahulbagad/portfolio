@@ -60,9 +60,9 @@ const Layout = ({ children }) => {
         <Experience experiences={data.site.siteMetadata.experiences}/>
         <Skills skills={data.site.siteMetadata.skills}/>
         <Projects projects={data.site.siteMetadata.projects} colorMode={colorMode}/>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `} <span role="img">🧡 by Rahul Bagad. WIP <span role="img">🚧</span></span>
+        <footer style={{ fontSize: 14, fontWeight: "lighter", textAlign: "center" }}>
+          © {new Date().getFullYear()}, Crafted
+          {` `}  by Rahul Bagad. Work in progress <span role="img">🚧</span>
         </footer>
       </div>
     </>

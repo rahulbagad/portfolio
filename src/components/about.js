@@ -18,7 +18,7 @@ const About = () => {
         agile and XP practices.
       </p>
       <p>
-        I'm passionate about programming and delivering, clean, test-covered,
+        I'm passionate about programming and delivering clean, test-covered,
         well-designed and scalable code. I am interested in Algorithms, Data
         Structures & Backend systems. And I also like to{" "}
         <a href="https://instagram.com/rahul_bagad" target="_blank">

@@ -13,7 +13,8 @@ const Projects = ({ projects, colorMode }) => {
           <Card
             sx={{
               maxWidth: 960,
-              margin: 10,
+              marginBottom: 10,
+              marginTop: 10,
               backgroundColor: colorMode === "dark" ? "#111" : "#f7f7f7",
               padding: 10,
               display: "inline-block",
