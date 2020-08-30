@@ -10,7 +10,7 @@ Key features:
   - Light & Dark theme
   - Content is loaded dynamically from JSON data
 
-Please free to fork and make changes. You can use this as a template. You just need to update `gatsby-config.js` metadata.
+Please feel free to fork and make changes. You can use this as a template. You just need to update `gatsby-config.js` metadata.
 
-Feedback is welcome 😁
+Feedback is welcomed 😁
  
