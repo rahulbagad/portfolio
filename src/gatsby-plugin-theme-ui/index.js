@@ -1,5 +1,5 @@
 export default {
-    initialColorModeName: 'dark',
+    initialColorModeName: 'light',
     fonts: {
       body: 'system-ui, sans-serif',
       heading: '"Avenir Next", sans-serif',

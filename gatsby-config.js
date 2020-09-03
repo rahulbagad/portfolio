@@ -57,12 +57,12 @@ module.exports = {
         ],
       },
     ],
-    skills: ["Java", "Python", "JavaScript", "PHP", "SpringBoot", "React", "Flask", "MongoDb", "MySQL", "Git", "AWS", "Docker", "Kubernetes" ],
+    skills: ["Java", "Python", "JavaScript", "PHP", "SpringBoot", "React", "Flask", "MongoDB", "MySQL", "Git", "AWS", "Docker", "Kubernetes" ],
     projects: [
       {
         title: "PuzzlePedia",
         description:"Webapp for Puzzle Lovers to try out new puzzles. At present it has 140+ users and 800+ submissions. Here one can solve, share and practice the puzzles, compete with others and conquer the leaderboard.",
-        technologies: ["PHP", "JavaScript", "MySQL", "bootstrap"],
+        technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
         link: "https://github.com/rahulbagad"
       },
       {
