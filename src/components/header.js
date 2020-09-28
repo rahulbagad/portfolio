@@ -7,7 +7,6 @@ import Button from "./button";
 
 const Header = ({siteMetadata}) => {
   const [colorMode, setColorMode] = useColorMode();
-  console.log(siteMetadata)
   const nextColorMode = colorMode === "light" ? "dark" : "light";
   return (
     <header>

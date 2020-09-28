@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
       <Divider />
       <div>
         {skills.map((skill) => 
-          <Badge sx={{ border: 5, margin: 1, backgroundColor: "#f5aa31", fontSize: 14, fontWeight: "bold" }}>
+          <Badge sx={{ border: 5, margin: 2, backgroundColor: "#f5aa31", fontSize: 14, fontWeight: "bold" }}>
             {skill}
           </Badge>
         )}
