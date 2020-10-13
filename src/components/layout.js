@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           skills
-          experiences { 
+          experiences {
             company
             role
             website
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
             to
             description
             work
-           }
+          }
           social {
             github
             linkedin
@@ -57,12 +57,17 @@ const Layout = ({ children }) => {
         <Header siteMetadata={data.site.siteMetadata} />
         <main>{children}</main>
         <About />
-        <Experience experiences={data.site.siteMetadata.experiences}/>
-        <Skills skills={data.site.siteMetadata.skills}/>
-        <Projects projects={data.site.siteMetadata.projects} colorMode={colorMode}/>
-        <footer style={{ fontSize: 14, fontWeight: "lighter", textAlign: "center" }}>
+        <Experience experiences={data.site.siteMetadata.experiences} />
+        <Skills skills={data.site.siteMetadata.skills} />
+        <Projects
+          projects={data.site.siteMetadata.projects}
+          colorMode={colorMode}
+        />
+        <footer
+          style={{ fontSize: 14, fontWeight: "lighter", textAlign: "center" }}
+        >
           © {new Date().getFullYear()}, Crafted
-          {` `}  by Rahul Bagad. Work in progress <span role="img">🚧</span>
+          {` `} by Rahul Bagad. Work in progress <span role="img">🚧</span>
         </footer>
       </div>
     </>

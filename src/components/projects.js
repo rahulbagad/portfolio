@@ -27,7 +27,7 @@ const Projects = ({ projects, colorMode }) => {
                 color: colorMode === "dark" ? "white" : "black",
                 fontWeight: "bold",
                 fontSize: 19,
-                marginBottom: 2
+                marginBottom: 2,
               }}
             >
               {project.title}
@@ -48,13 +48,15 @@ const Projects = ({ projects, colorMode }) => {
                 color: colorMode === "dark" ? "white" : "black",
                 fontWeight: "lighter",
                 fontSize: 16,
-                marginBottom: 2
+                marginBottom: 2,
               }}
             >
               {project.description}
             </Text>
             {project.technologies.map((tech) => (
-              <Badge sx={{ border: 3, marginRight: 2, backgroundColor: "#9f7aea" }}>
+              <Badge
+                sx={{ border: 3, marginRight: 2, backgroundColor: "#9f7aea" }}
+              >
                 {tech}
               </Badge>
             ))}
