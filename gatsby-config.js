@@ -26,7 +26,8 @@ module.exports = {
         ],
         work: [
           `Programming and delivering clean, test-covered and well-designed code.`,
-          `Implementing UI Designs and backend integration.–Integration of third party APIs in the system, with regular communication with the API vendors.`,
+          `Implementing UI Designs and backend integration.`,
+          `Integration of third party APIs in the system, with regular communication with the API vendors.`,
           `Designing and implementing data ingestion and enrichment flows for the data from various data-sources.`,
           `Identifying bottlenecks and optimizing serving time, page load time, database queries.`,
           `Discussing business requirements with stakeholders and translating them into technical requirements.`,
