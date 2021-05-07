@@ -15,11 +15,18 @@ module.exports = {
     },
     experiences: [
       {
+        company: `Druva`,
+        website: `https://www.druva.com`,
+        role: `Staff Software Engineer`,
+        from: `April 2021`,
+        to: `Present`,
+      },
+      {
         company: `Sahaj`,
         website: `https://www.sahaj.ai`,
         role: `Solution Consultant`,
         from: `April 2019`,
-        to: `Present`,
+        to: `April 2021`,
         description: [
           `Involved in client interactions, designing and developing end to end features.`,
           `Working on building real-time, automated OOH trading platform.`,
