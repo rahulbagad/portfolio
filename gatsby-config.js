@@ -20,6 +20,10 @@ module.exports = {
         role: `Staff Software Engineer`,
         from: `April 2021`,
         to: `Present`,
+        description: [
+          'Working with Druva foundation team as Staff Engineer.',
+          'Involved in developing distributed system software for data management.',
+        ],
       },
       {
         company: `Sahaj`,
