@@ -9,7 +9,7 @@ const About = () => {
       <p>
         Wait, you already know my name. Let's talk about other things. I'm a
         Computer science enthusiast and B.Tech Information Technology graduate
-        having 2.5+ years of experience as Software Engineer with exposure to agile methodology. <span role="img">👨‍💻</span> As
+        having 2.5+ years of experience as Software Engineer <span role="img">👨‍💻</span> with exposure to agile methodology. As
         of now I'm involved in developing distributed system software for data management.
       </p>
       <p>
