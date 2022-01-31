@@ -1,5 +1,5 @@
 # Portfolio 
-[www.rahulbagad.tech]
+[https://rahulbagad.netlify.app/]
 
 
 👋 Hi There, this is my upcoming personal website. This is work in progress 🚧. 
